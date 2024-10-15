@@ -12,7 +12,16 @@ int main() {
         s += __lg(x);
     }
 
-    cout << (s + 9) / 10 << '\n';
+    if (s == 0) {
+        return cout << 0, 0;
+    }
+
+    double down = log2(2024);
+    double ans = 1;
+    while (ans * down < s) {
+        ans++;
+    }
+    cout << ans << '\n';
 
     return 0;
 }
