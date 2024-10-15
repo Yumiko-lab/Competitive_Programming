@@ -13,10 +13,10 @@ int main() {
     for (int i = 0; i < m; i++) {
         int x;
         cin >> x;
-        int t = 1;
+        int p = 1;
         for (int j = 0; j < k; j++) {
-            t = 1LL * t * x % n;
-            in[t] = 1;
+            p = p * x % n;
+            in[p] = 1;
         }
     }
 
@@ -24,10 +24,10 @@ int main() {
         int x;
         cin >> x;
         bool ok = true;
-        int t = 1;
+        int p = 1;
         for (int i = 0; i < k; i++) {
-            t = 1LL * t * x % n;
-            if (!in[t]) {
+            p = p * x % n;
+            if (!in[p]) {
                 ok = false;
                 break;
             }
