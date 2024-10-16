@@ -11,13 +11,9 @@ int main() {
         cin >> x;
         s += __lg(x);
     }
-
-    if (s == 0) {
-        return cout << 0, 0;
-    }
-
+    
     double down = log2(2024);
-    double ans = 1;
+    double ans = 0;
     while (ans * down < s) {
         ans++;
     }
