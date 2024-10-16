@@ -1,4 +1,4 @@
-# 2024 Hunan
+# 2024 Hunan Provincial
 
 
 [如何评价2024年湖南省大学生程序设计竞赛(HNCPC)?](https://www.zhihu.com/question/663248911) 
