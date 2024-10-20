@@ -1,10 +1,15 @@
 # AtCoder Beginner Contest 318
 
 
+[Problems](https://atcoder.jp/contests/abc318/tasks) 
+[Problems Rating](https://clist.by/problems/?resource=93&contest=45373738) 
+
+
 > Tutorials：
 > 
 > - [Official - Blog](https://atcoder.jp/contests/abc318/editorial) 
 > - [AA競程 - A ~ G - Video - Bilibili](https://www.bilibili.com/video/BV1fu411A75W/) 
+> - [Cranewilliams - A ~ G - Blog - Zhihu](https://zhuanlan.zhihu.com/p/653967493) 
 
 
 
@@ -76,6 +81,10 @@ int main() {
 }
 ```
 
+```cpp
+bool vis[N][N]{} // 不能用在匿名函数中 auto dfs = [&](auto self ..)
+```
+
 ## C. Blue Spring
 
 贪心。
@@ -125,11 +134,66 @@ int main() {
 > 给定一个无向图，求其中端点不重合的边的集合的边权和的最大值。
 > - $1 \le N \le 16$
 
+
+### 状态压缩 DP
+
+$f(s)$：表示当前已经配对的点的状态是 $s$ 的最大权值。
+
+暴力枚举其中两个匹配的点即可。
+
+时间复杂度：$\mathcal O(N^2 \times 2^N)$
+
+
+
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = long long;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int N;
+    cin >> N;
+    vector<vector<int>> g(N, vector<int>(N));
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
+            cin >> g[i][j];
+            g[j][i] = g[i][j];
+        }
+    }
+
+    vector<i64> f(1 << N);
+    for (int s = 0; s < 1 << N; s++) {
+        for (int i = 0; i < N; i++) {
+            if (s >> i & 1) {
+                continue;
+            }
+            for (int j = 0; j < N; j++) {
+                if (s >> j & 1) {
+                    continue;
+                }
+                int t = s | (1 << i) | (1 << j);
+                f[t] = max(f[t], f[s] + g[i][j]);
+            }
+        }
+    }
+    
+    cout << f[(1 << N) - 1] << '\n';
+
+    return 0;
+}
+```
+
+### DFS 暴搜
+
 显然答案对应的点集已经唯一 ( 点数是偶数全选，奇数最后缺一个 )，也就是说只需要考虑如何配对所有点，使得最终权值和最大。
 
-方案数最多：$15 \times 13 \times 11 \times \cdots \times 1 = 2027025 \approx 2e6$
+手玩一下发现方案数最多：$15 \times 13 \times 11 \times \cdots \times 1 = 2027025 \approx 2e6$
 
-
+因此也可以直接暴搜，但是明显没有状压好写。
 
 ```cpp
 #include <bits/stdc++.h>
@@ -182,6 +246,12 @@ int main() {
 }
 ```
 
+### 带权带花树
+
+待补。
+
+[P6699 【模板】一般图最大权匹配](https://www.luogu.com.cn/problem/P6699) 
+
 
 ## E. Sandwiches
 
@@ -205,13 +275,9 @@ int main() {
     int N;
     cin >> N;
     vector<int> A(N);
+    map<int, int> L, R;
     for (auto &x : A) {
         cin >> x;
-    }
-
-    map<int, int> L, R;
-    
-    for (auto x : A) {
         R[x]++;
     }
 
@@ -233,11 +299,52 @@ int main() {
 
 ## F. Octopus
 
+> Description：
+>
+> 
+
+
+看起来很简单，实际上需要**非常敏锐和深刻的观察**。
+
+
+观察：
+
+1. 排序**手的长度** $L_{1 \sim n}$，对于某一个头的位置 $x$ 来说，显然有一个明显的贪心：根据距离宝藏的位置**从小到大依次分配**对应长度的手。
+
+
+
+
+```cpp
+
+```
 
 
 ## G. Typical Path Problem
 
+> Description：
+>
+> 给定一张 $N$ 个点 $M$ 条边的无向图，同时给定三个点 $A, B, C$，问图中是否存在一条**依次**经过点 $A, B, C$ 的简单路径。
+
+此题的做法非常多：
+
+1. 网络流
+2. 缩点 + 树链剖分 —— jiangly
+3. 圆方树
+
+
+
+```cpp
+
+```
+
 
 ## Ex. Count Strong Test Cases
+
+
+多项式待补。
+
+```cpp
+
+```
 
 

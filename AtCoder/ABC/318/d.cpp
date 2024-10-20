@@ -16,33 +16,23 @@ int main() {
         }
     }
 
-    i64 ans = 0;
-    vector<bool> used(N);
-    auto dfs = [&](auto self, int u, i64 sum, int skip) -> void {
-        if (u == N) {
-            ans = max(ans, sum);
-            return;
-        }
-        if (used[u]) {
-            self(self, u + 1, sum, skip);
-            return;
-        }
-        if (skip) {
-            self(self, u + 1, sum, 0);
-        }
-        for (int i = u + 1; i < N; i++) {
-            if (used[i]) {
+    vector<i64> f(1 << N);
+    for (int s = 0; s < 1 << N; s++) {
+        for (int i = 0; i < N; i++) {
+            if (s >> i & 1) {
                 continue;
             }
-            used[i] = true;
-            self(self, u + 1, sum + g[u][i], skip);
-            used[i] = false;
+            for (int j = 0; j < N; j++) {
+                if (s >> j & 1) {
+                    continue;
+                }
+                int t = s | (1 << i) | (1 << j);
+                f[t] = max(f[t], f[s] + g[i][j]);
+            }
         }
-    };
-
-    dfs(dfs, 0, 0, N % 2);
-
-    cout << ans << '\n';
+    }
+    
+    cout << f[(1 << N) - 1] << '\n';
 
     return 0;
 }
