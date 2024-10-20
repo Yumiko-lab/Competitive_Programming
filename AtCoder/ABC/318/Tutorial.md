@@ -10,6 +10,7 @@
 > - [Official - Blog](https://atcoder.jp/contests/abc318/editorial) 
 > - [AA競程 - A ~ G - Video - Bilibili](https://www.bilibili.com/video/BV1fu411A75W/) 
 > - [Cranewilliams - A ~ G - Blog - Zhihu](https://zhuanlan.zhihu.com/p/653967493) 
+> - [Unlimitedz - A ~ F - Blog - CSDN](https://blog.csdn.net/Unlimited_ci/article/details/132650801)
 
 
 
@@ -303,6 +304,7 @@ int main() {
 >
 > 
 
+ 
 
 看起来很简单，实际上需要**非常敏锐和深刻的观察**。
 
@@ -310,8 +312,6 @@ int main() {
 观察：
 
 1. 排序**手的长度** $L_{1 \sim n}$，对于某一个头的位置 $x$ 来说，显然有一个明显的贪心：根据距离宝藏的位置**从小到大依次分配**对应长度的手。
-
-
 
 
 ```cpp
