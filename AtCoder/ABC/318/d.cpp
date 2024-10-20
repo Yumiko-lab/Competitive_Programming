@@ -8,7 +8,6 @@ int main() {
 
     int N;
     cin >> N;
-    int M = N * (N - 1) / 2;
     vector<vector<int>> g(N, vector<int>(N));
     for (int i = 0; i < N; i++) {
         for (int j = i + 1; j < N; j++) {
@@ -17,15 +16,33 @@ int main() {
         }
     }
 
-    for (int i = 0; i < 1 << N; i++) {
-        int cnt = __builtin_popcount(i);
-        if (cnt % 2) {
-            continue;
+    i64 ans = 0;
+    vector<bool> used(N);
+    auto dfs = [&](auto self, int u, i64 sum, int skip) -> void {
+        if (u == N) {
+            ans = max(ans, sum);
+            return;
         }
-        
-    }
+        if (used[u]) {
+            self(self, u + 1, sum, skip);
+            return;
+        }
+        if (skip) {
+            self(self, u + 1, sum, 0);
+        }
+        for (int i = u + 1; i < N; i++) {
+            if (used[i]) {
+                continue;
+            }
+            used[i] = true;
+            self(self, u + 1, sum + g[u][i], skip);
+            used[i] = false;
+        }
+    };
 
+    dfs(dfs, 0, 0, N % 2);
 
+    cout << ans << '\n';
 
     return 0;
 }

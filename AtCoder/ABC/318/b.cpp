@@ -9,8 +9,8 @@ int main() {
 
     int N;
     cin >> N;
-    vector<vector<int>> vis(M, vector<int>(M));
 
+    bool vis[M][M]{};
     for (int i = 0; i < N; i++) {
         int A, B, C, D;
         cin >> A >> B >> C >> D;
