@@ -1,12 +1,18 @@
 # 算法竞赛
 
 
+
+[全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
+全国高校计算机能力挑战赛 —— 程序设计赛模拟赛时间：2024-10-27 10:00 - 11:30
+
+
+
 周赛 (每周固定时间)：
 
 1. [AtCoder](https://atcoder.jp/contests/) —— Sat (20:00 ~ 21:40)
-2. [牛客](https://ac.nowcoder.com/acm/contest/vip-index) —— Sun (19:00 ~ 21:00)
-3. [LeetCode](https://leetcode.cn/contest/) —— Sun (10:30 ~ 12:00) / Sat (22:30 ~ 00:00)
-4. [Lanqiao](https://www.lanqiao.cn/oj-contest/) —— Sat (19:00 ~ 21:00)
+2. [Lanqiao](https://www.lanqiao.cn/oj-contest/) —— Sat (19:00 ~ 21:00)
+3. [牛客](https://ac.nowcoder.com/acm/contest/vip-index) —— Sun (19:00 ~ 21:00)
+4. [LeetCode](https://leetcode.cn/contest/) —— Sun (10:30 ~ 12:00) / Sat (22:30 ~ 00:00)
 
 
 
