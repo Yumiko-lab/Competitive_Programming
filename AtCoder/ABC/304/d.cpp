@@ -3,7 +3,9 @@ using namespace std;
 using i64 = long long;
 using PII = pair<int, int>;
 
-int main() {
+#define int long long
+
+signed main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
@@ -18,25 +20,23 @@ int main() {
 
     int A;
     cin >> A;
-    vector<int> a(A + 1);
+    vector<int> a(A);
     for (int i = 0; i < A; i++) {
         cin >> a[i];
     }
-    a[A] = W;
 
     int B;
     cin >> B;
-    vector<int> b(B + 1);
+    vector<int> b(B);
     for (int i = 0; i < B; i++) {
         cin >> b[i];
     }
-    b[B] = H;
 
     map<PII, int> cnt;
     int mn = N, mx = 0;
     for (auto [p, q] : acc) {
-        int x = *upper_bound(a.begin(), a.end(), p);
-        int y = *upper_bound(b.begin(), b.end(), q);
+        int x = lower_bound(a.begin(), a.end(), p) - a.begin();
+        int y = lower_bound(b.begin(), b.end(), q) - b.begin();
         cnt[{x, y}]++;
         mn = min(mn, cnt[{x, y}]);
         mx = max(mx, cnt[{x, y}]);
