@@ -1,8 +1,9 @@
 # 算法竞赛
 
 
+[2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
+赛氪 —— 全国大学生算法设计与编程挑战赛（秋季赛）：2024-11-3
 
-赛氪 —— 全国大学生算法设计与编程挑战赛：2024-11-3
 
 
 [全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
