@@ -1,39 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string str = "NESW";
+#define x first
+#define y second
 
-struct Dir {
-    char d;
-    int x;
-};
+string str = "NESW";
 
 void solve() {
     int n;
     cin >> n;
-    vector<Dir> a(n);
-    int hor = 0, ver = 0;
+    vector<pair<char, int>> a(n);
     for (auto &[d, x] : a) {
         cin >> d >> x;
-        if (d == 'N') {
-            hor += x;
-        } else if (d == 'S') {
-            hor -= x;
-        } else if (d == 'E') {
-            ver += x;
-        } else {
-            ver -= x;
-        }
     }
-    cout << "3 ";
-    cout << (hor > 0 ? "N" : "S") << '\n';
-    cout << "Z " << abs(hor) << '\n';
-    if (hor > 0) {
-        cout << (ver > 0 ? "R" : "L") << '\n';
-    } else {
-        cout << (ver > 0 ? "L" : "R") << '\n';
+    cout << 2 * n - 1 << ' ' << a[0].x << '\n';
+    for (int i = 0; i + 1 < n; i++) {
+        cout << "Z " << a[i].y << '\n';
+        int d = (str.find(a[i + 1].x) - str.find(a[i].x));
+        cout << (d == -1 || d == 3? "L" : "R") << '\n';
     }
-    cout << "Z " << abs(ver) << '\n';
+    cout << "Z " << a[n - 1].y << '\n';
 }
 
 int main() {
@@ -48,13 +34,3 @@ int main() {
 
     return 0;
 }
-
-/*
-
-1
-3
-S 3
-W 2
-N 1
-
-*/
