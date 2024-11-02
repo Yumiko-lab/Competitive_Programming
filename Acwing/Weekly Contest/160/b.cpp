@@ -6,31 +6,59 @@ int main() {
     cin.tie(nullptr);
 
     string s;
-    cin >> s;
+    cin >> s; // a.deb
     int n = s.size();
     int a = s[0] - '0';
-    int p = s.find('.');
 
-    string d = s.substr(2, p - 2);
+    int e = s.find('e');
+    string d = s.substr(2, e - 2), b = s.substr(e + 1);
+    int num_b = stoi(b);
 
-    int b = 0;
-    for (int i = p + 1; i < n; i++) {
-        b = b * 10 + (s[i] - '0'); 
-    }
-
-    if (b >= d.size()) {
-        cout << a << d;
-        b -= d.size();
-        while (b--) {
+    if (num_b >= d.size()) {
+        if (a > 0) {
+            cout << a;
+            cout << d;
+        } else {
+            int noz = -1; // non-zero
+            for (int i = 0; i < d.size(); i++) {
+                if (d[i] > '0') {
+                    cout << d.substr(i);
+                    break;
+                }
+            }
+        }
+        num_b -= d.size();
+        while (num_b--) {
             cout << 0;
         }
-        return 0;
+    } else {
+        if (a > 0) {
+            cout << a;
+            cout << d.substr(0, num_b);
+            cout << '.';
+            cout << d.substr(num_b);
+        } else {
+            int noz = -1;
+            string t;
+            for (int i = 0; i < d.size(); i++) {
+                if (d[i] > '0') {
+                    noz = i;
+                    t = d.substr(i);
+                    break;
+                }
+            }
+            // 0 .. noz - 1: zeros'
+            if (num_b <= noz) {
+                cout << "0.";
+                cout << t;
+            } else {
+                num_b -= noz;
+                cout << d.substr(0, num_b);
+                cout << '.';
+                cout << d.substr(num_b);
+            }
+        }
     }
-
-    cout << a;
-    cout << d.substr(0, b);
-    cout << '.';
-    cout << d.substr(b);
 
     return 0;
 }
