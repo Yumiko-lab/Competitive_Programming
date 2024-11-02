@@ -1,9 +1,10 @@
 # 算法竞赛
 
 
+## 训练地址
+
 [2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
 赛氪 —— 全国大学生算法设计与编程挑战赛（秋季赛）：2024-11-3
-
 
 
 [全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
@@ -43,3 +44,11 @@
 刷难题：
 1. [LOJ](https://loj.ac/) 
 2. [UOJ](https://uoj.ac/)
+
+
+
+## 如何快速读题 (快速get到题眼) How to read Problems quickly
+
+[Notes on Reading Problems in ICPC Competitions - Codeforces](https://codeforces.com/blog/entry/132486) 
+
+[How can I speed up my reading of a Codeforces or TopCoder problem statement? - Quora](https://www.quora.com/How-can-I-speed-up-my-reading-of-a-Codeforces-or-TopCoder-problem-statement) 
