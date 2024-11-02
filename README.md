@@ -47,7 +47,7 @@
 
 
 
-## 如何快速读题 (快速get到题眼) How to read Problems quickly
+## 如何快速读题 (快速get到题眼) How to read problems quickly
 
 [Notes on Reading Problems in ICPC Competitions - Codeforces](https://codeforces.com/blog/entry/132486) 
 
