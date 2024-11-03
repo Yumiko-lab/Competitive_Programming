@@ -19,7 +19,7 @@ signed main() {
         for (int j = 0; j < k; j++) {
             a[i][j] |= a[i - 1][j];
         }
-    }
+    } 
 
     for (int i = 0; i < q; i++) {
         int m;
