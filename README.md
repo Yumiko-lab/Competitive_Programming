@@ -3,14 +3,6 @@
 
 ## 训练地址
 
-[2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
-赛氪 —— 全国大学生算法设计与编程挑战赛（秋季赛）：2024-11-3 13:00 ~ 18:00
-
-
-[全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
-全国高校计算机能力挑战赛 —— 程序设计赛模拟赛时间：2024-10-27 10:00 - 11:30
-
-
 
 周赛 (每周固定时间)：
 
@@ -52,3 +44,13 @@
 [Notes on Reading Problems in ICPC Competitions - Codeforces](https://codeforces.com/blog/entry/132486) 
 
 [How can I speed up my reading of a Codeforces or TopCoder problem statement? - Quora](https://www.quora.com/How-can-I-speed-up-my-reading-of-a-Codeforces-or-TopCoder-problem-statement) 
+
+
+
+## 水赛混奖
+
+[2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
+赛氪 —— 全国大学生算法设计与编程挑战赛（秋季赛）
+
+[全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
+全国高校计算机能力挑战赛
