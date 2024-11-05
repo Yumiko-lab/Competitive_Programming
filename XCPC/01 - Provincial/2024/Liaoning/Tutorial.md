@@ -1,6 +1,7 @@
 # 2024 CCPC Liaoning Provincial Contest
 
-2024 CCPC Liaoning Provincial Contest, 2024 CCPC 辽宁省赛
+
+[2024 CCPC Liaoning Provincial Contest, 2024 CCPC 辽宁省赛](https://codeforces.com/gym/105481) 
 
 > 参考题解：
 >
@@ -477,7 +478,12 @@ int main() {
 
 ## G. 顾影自怜
 
-最大值的出现次数至少 $k$ 次，不难观察到，其贡献和数组的长度没有关系
+> 经典的单调栈求加速求贡献问题。
+
+
+最大值的出现次数至少 $k$ 次，不难观察到，其贡献和数组的长度没有关系。
+
+
 
 ```cpp
 
