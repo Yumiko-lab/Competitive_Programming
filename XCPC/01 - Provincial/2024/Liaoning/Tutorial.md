@@ -201,25 +201,146 @@ int main() {
 
 ## E. 俄式简餐
 
-与 [2024牛客暑期多校训练营5 — B. 珑](https://ac.nowcoder.com/acm/contest/81600) 这题非常类似，分类讨论。
+与 [2024牛客暑期多校训练营5 — B. 珑](https://ac.nowcoder.com/acm/contest/81600) 这题非常类似 — 分类讨论。
 
 在本题中，还需要输出具体方案，如何把代码写短比较考验代码能力。
 
-```cpp
+[shift - Code](https://qoj.ac/submission/713539) 
 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n, m;
+    cin >> n >> m;
+    if (n * m & 1) {
+        cout << "NO\n";
+        return;
+    }
+
+    if (n % 4 == 0 or m % 4 == 0) {
+        bool is = false;
+        if(n % 4 != 0) {
+            is = true;
+            swap(n, m);
+        }
+        vector<vector<int>> g(n, vector<int>(m));
+        int now = 1;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < m; j++) {
+                if(i % 4 == 0) {
+                    g[i][j] = now++;
+                } else {
+                    g[i][j] = g[i - 1][j];
+                }
+            }
+        }
+        cout << "YES\n";
+        if (is) {
+            swap(n, m);
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (is) {
+                    cout << g[j][i] << " \n"[j == m - 1];
+                } else {
+                    cout << g[i][j] << " \n"[j == m - 1];
+                }
+            }
+        }
+    } else if (n % 2 == 0 and m % 2 == 0) {
+        int now = 1;
+        bool is = false;
+        if (n <= 4 and m <= 4) {
+            cout << "NO\n";
+            return;
+        } else if (n < m) {
+            is = true;
+            swap(n, m);
+        }
+        vector<vector<int>> g(n, vector<int>(m));
+        for (int j = 0; j < m; j += 2) {
+            g[0][j] = now;
+            g[0][j + 1] = now;
+            g[1][j] = now;
+            g[2][j] = now;
+            now += 1;
+
+            g[n - 1][j] = now;
+            g[n - 1][j + 1] = now;
+            g[n - 2][j] = now;
+            g[n - 3][j] = now;
+            now += 1;
+
+            for (int i = 3; i <= n - 4; i++) {
+                if(i % 4 == 3) {
+                    g[i][j] = now++;
+                } else {
+                    g[i][j] = g[i - 1][j];
+                }
+            }
+            for (int i = 1; i <= n - 2; i++) {
+                if (i % 4 == 1) {
+                    g[i][j + 1] = now++;
+                } else {
+                    g[i][j + 1] = g[i - 1][j + 1];
+                }
+            }
+        }
+        if (is) {
+            swap(n, m);
+        }
+        cout << "YES\n";
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (is) {
+                    cout << g[j][i] << " \n"[j == m - 1];
+                } else {
+                    cout << g[i][j] << " \n"[j == m - 1];
+                }
+            }
+        }
+    } else {
+        cout << "NO\n";
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}
 ```
+
 
 
 ## L. 龙之研习
 
 
-非常 CF 风格的一题，前缀和 + 二分的内核非常典。
+> 非常 CF 风格的一题，**前缀和 + 二分答案**的内核非常典。
+
+思考到最后不难发现，只需要实现一个求 $1 \sim x$ ( $x \in 1e18$ ) 中闰年的个数即可。
+
+对于题目中不同的 $p$，由于题目要求其是**唯一的**，因此每一个 $p$ 对应的闰年是不会相交的 ( 否则 $p$ 就不是唯一的 )，因此 $1 \sim x$ 的闰年个数为：
+
+$$
+\sum_{p = 0}^{\infty} \lfloor \frac x{4 \times 100^p}\rfloor - \lfloor \frac x{ 100^{p + 1}}\rfloor
+$$
+
+( 容斥原理 )
 
 
 二分上界需要开 $2e18$，否则会 WA。
 
 思考：此题如何估算二分上界？
-
 
 
 ```cpp
@@ -268,3 +389,116 @@ int main() {
     return 0;
 }
 ```
+
+## D. 都市叠高
+
+> 假的计算几何，实则 dp。
+
+
+
+> 观察：
+>
+> 1. "面积最小的凸多边形" $\implies$ 所有点都作为凸多边形的顶点
+> 2. "**移除了原版叠叠高的平衡性判定**" $\implies$ 只会利用凸多边形中**距离最远的两个顶点**
+
+
+---
+
+错误思路——
+
+$f(i)$：考虑前 $i$ 个点的最大答案。
+
+转移：枚举最后一个凸多边形利用的点的集合，同时维护任意两个点之间的距离最大值。
+
+时间复杂度：$\mathcal O(n \times n^2)$
+
+---
+
+实际上不需要维护两个点之间的距离最大值，不是枚举点集求最大距离，反而**枚举最大值在哪两个点之间**。
+
+转移：
+
+$$
+f(i) = \max(f(j - 1) + dis(p_i, p_j))
+$$
+
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using PII = pair<int, int>;
+
+#define x first
+#define y second
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout << fixed << setprecision(15);
+
+    int n;
+    cin >> n;
+    vector<PII> p(n + 1);
+    for (int i = 1; i <= n; i++) {
+        int x, y;
+        cin >> x >> y;
+        p[i] = {x, y};
+    }
+
+    auto dis = [&](auto a, auto b) {
+        double dx = a.x - b.x;
+        double dy = a.y - b.y;
+        return sqrt(dx * dx + dy * dy);
+    };
+
+    vector<double> f(n + 1);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            f[i] = max(f[i], f[j - 1] + dis(p[i], p[j]));
+        }
+    }
+
+    cout << f[n] << '\n';
+
+    return 0;
+}
+```
+
+> 代码细节：
+>
+> 当 $j$ 枚举到 $i$ 的时候，等价于不使用第 $i$ 个点 ( $dis(i, j) = 0$ )。
+
+
+
+
+
+
+## G. 顾影自怜
+
+最大值的出现次数至少 $k$ 次，不难观察到，其贡献和数组的长度没有关系
+
+```cpp
+
+```
+
+
+
+## K. 可重集合
+
+
+
+```cpp
+
+```
+
+
+
+
+## M. 盲盒谜题
+
+
+
+```cpp
+
+```
+
