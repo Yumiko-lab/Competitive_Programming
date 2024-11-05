@@ -25,7 +25,9 @@
 > - 很天才的想法：
 > - 暂时做不了：
 
-## B. 
+
+
+## B. 比分幻术
 
 ```cpp
 #include <bits/stdc++.h>
@@ -44,7 +46,7 @@ int main() {
 
 
 
-## J. 
+## J. 结课风云
 
 ```cpp
 #include <bits/stdc++.h>
@@ -85,7 +87,7 @@ int main() {
 
 
 
-## A. 
+## A. 爱上字典
 
 
 ```cpp
@@ -133,7 +135,7 @@ int main() {
 ```
 
 
-## C. 
+## C. 插排串联
 
 ```cpp
 #include <bits/stdc++.h>
@@ -197,17 +199,72 @@ int main() {
 ```
 
 
-## E. 
+## E. 俄式简餐
+
+与 [2024牛客暑期多校训练营5 — B. 珑](https://ac.nowcoder.com/acm/contest/81600) 这题非常类似，分类讨论。
+
+在本题中，还需要输出具体方案，如何把代码写短比较考验代码能力。
 
 ```cpp
 
 ```
 
 
-## L. 
+## L. 龙之研习
+
+
+非常 CF 风格的一题，前缀和 + 二分的内核非常典。
+
+
+二分上界需要开 $2e18$，否则会 WA。
+
+思考：此题如何估算二分上界？
 
 
 
 ```cpp
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = long long;
 
+i64 k;
+
+i64 calc(i64 x) {
+    i64 sum = 0;
+    for (i64 p = 1; p <= x; p *= 100) {
+        sum += x / (4 * p) - x / (100 * p);
+    }
+    return x - sum;
+}
+
+bool check(i64 mi) {
+    return calc(mi) - calc(2024) >= k;
+}
+
+void solve() {
+    cin >> k;
+    i64 lo = 2025, hi = 2e18;
+    while (lo < hi) {
+        i64 mi = (lo + hi) >> 1;
+        if (check(mi)) {
+            hi = mi;
+        } else {
+            lo = mi + 1;
+        }
+    }
+    cout << lo << '\n';
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}
 ```

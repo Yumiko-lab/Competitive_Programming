@@ -5,8 +5,10 @@ using i64 = long long;
 i64 k;
 
 i64 calc(i64 x) {
-    i64 sum = x / 4; // + x / 400 - x / 400
-    
+    i64 sum = 0;
+    for (i64 p = 1; p <= x; p *= 100) {
+        sum += x / (4 * p) - x / (100 * p);
+    }
     return x - sum;
 }
 
@@ -16,7 +18,7 @@ bool check(i64 mi) {
 
 void solve() {
     cin >> k;
-    i64 lo = 1, hi = 1e18;
+    i64 lo = 2025, hi = 2e18;
     while (lo < hi) {
         i64 mi = (lo + hi) >> 1;
         if (check(mi)) {
@@ -25,7 +27,7 @@ void solve() {
             lo = mi + 1;
         }
     }
-    cout << 2024 + lo << '\n';
+    cout << lo << '\n';
 }
 
 int main() {
