@@ -422,6 +422,8 @@ $$
 f(i) = \max(f(j - 1) + dis(p_i, p_j))
 $$
 
+时间复杂度：$\mathcal O(n \times n)$ 
+
 
 ```cpp
 #include <bits/stdc++.h>
