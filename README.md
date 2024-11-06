@@ -48,6 +48,12 @@
 
 ## CF 如何快速上分 ( 快速进步 ) About Improving Efficiently
 
+[0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
+
+[Um_nik - How to practice Competitive Programming [Um_nik version] - Codeforces](https://codeforces.com/blog/entry/98806) 
+
+[Radewoosh - My opinion on how to practice competitive programming - Codeforces](https://codeforces.com/blog/entry/91114) 
+
 [E869120 - [Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+ - Codeforces](https://codeforces.com/blog/entry/66909) 
 
 [robot-dreams - Improving efficiently: beyond "just solve more problems"? - Codeforces](https://codeforces.com/blog/entry/66715) 
