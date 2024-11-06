@@ -46,6 +46,26 @@
 [How can I speed up my reading of a Codeforces or TopCoder problem statement? - Quora](https://www.quora.com/How-can-I-speed-up-my-reading-of-a-Codeforces-or-TopCoder-problem-statement) 
 
 
+## CF 如何快速上分 ( 快速进步 ) About Improving Efficiently
+
+[E869120 - [Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+ - Codeforces](https://codeforces.com/blog/entry/66909) 
+
+[robot-dreams - Improving efficiently: beyond "just solve more problems"? - Codeforces](https://codeforces.com/blog/entry/66715) 
+
+[RegenFallen - Codeforces上分攻略1: 计划 - Bilibili](https://www.bilibili.com/video/BV1tK42117h4/) 
+
+[RegenFallen - Codeforces上分攻略2: 练习 - Bilibili](https://www.bilibili.com/video/BV1Sx4y1174X/) 
+
+
+其余有关 Codeforces 的博客：
+
+[ezoixx130 - 【洛谷日报#116】Codeforces快速精通 - Zhihu](https://zhuanlan.zhihu.com/p/71674596) 
+
+[HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
+
+
+
+
 
 ## 水赛混奖
 
