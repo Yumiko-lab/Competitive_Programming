@@ -74,6 +74,10 @@
 
 [Gerchart - XCPC线下比赛环境C++代码的编写与运行简述（ICPC、CCPC、省赛比赛环境） - Bilibili](https://www.bilibili.com/video/BV1Vzy5YUEZx/) 
 
+[DOMJudge](https://www.domjudge.org/) 
+
+[DOMjudge 中文文档](https://nwpu.gitbook.io/domjudge-doc) 
+
 
 ## 水赛混奖
 
