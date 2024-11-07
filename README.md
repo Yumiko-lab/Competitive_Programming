@@ -70,7 +70,9 @@
 [HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
 
 
+## XCPC Environment
 
+[Gerchart - XCPC线下比赛环境C++代码的编写与运行简述（ICPC、CCPC、省赛比赛环境） - Bilibili](https://www.bilibili.com/video/BV1Vzy5YUEZx/) 
 
 
 ## 水赛混奖
