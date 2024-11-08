@@ -5,6 +5,18 @@
 
 [CLIST - Problems Rating Distribution](https://clist.by/problems/?resource=1&contest=50323111) 
 
+> 参考题解：
+>
+> - [幻想家协会会长 - A ~ E - Video - Bilibili](https://www.bilibili.com/video/BV1xj421d7dB/) 
+> - [RegenFallen - A ~ E - Video - Bilibili](https://www.bilibili.com/video/BV1Wz421o7DP/) 
+> - [cup-pyy - A ~ G - Blog - Zhihu](https://zhuanlan.zhihu.com/p/689964048) 
+> - [Aicu - A ~ F - Blog - Zhihu](https://zhuanlan.zhihu.com/p/690001082) 
+> - [AC-Panda - A ~ E - Blog - Zhihu](https://zhuanlan.zhihu.com/p/690797769) 
+
+
+
+
+
 ## A. 
 
 

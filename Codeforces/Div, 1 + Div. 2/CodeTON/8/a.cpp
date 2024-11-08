@@ -4,7 +4,7 @@ using namespace std;
 void solve() {
     int n, k;
     cin >> n >> k;
-    if (k != 1 && k != n) {
+    if (k != 1 && k != n) { 
         cout << "-1\n";
         return;
     }
