@@ -1,14 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+constexpr int N = 1010;
+
+int n, k;
+int a[N][N];
+
 void solve() {
-    int n, x, y;
-    cin >> n >> x >> y;
-    vector<int> ver(x);
-    for (auto &v : ver) {
-        cin >> v;
+    cin >> n >> k;
+    for (int i = 1; i <= n; i++) {
+        for (int j = i; j <= n; j++) {
+            cin >> a[i][j];
+        }
     }
-    
+        
 }
 
 int main() {
