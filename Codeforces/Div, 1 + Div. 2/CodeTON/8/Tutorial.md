@@ -1,7 +1,9 @@
 # CodeTON Round 8
 
-[CLIST - Problems Rating Distribution](https://clist.by/problems/?resource=1&contest=50323111) 
 
+[CodeTON Round 8 (Div. 1 + Div. 2, Rated, Prizes!)](https://codeforces.com/contest/1942) 
+
+[CLIST - Problems Rating Distribution](https://clist.by/problems/?resource=1&contest=50323111) 
 
 ## A. 
 
