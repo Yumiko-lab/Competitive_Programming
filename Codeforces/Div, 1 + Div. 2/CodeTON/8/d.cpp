@@ -13,7 +13,7 @@ void solve() {
             cin >> a[i][j];
         }
     }
-        
+    
 }
 
 int main() {
