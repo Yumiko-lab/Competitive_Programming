@@ -71,9 +71,68 @@
 
 [robot-dreams - Improving efficiently: beyond "just solve more problems"? - Codeforces](https://codeforces.com/blog/entry/66715) 
 
+
+
+
 [RegenFallen - Codeforces上分攻略1: 计划 - Bilibili](https://www.bilibili.com/video/BV1tK42117h4/) 
 
+为什么要打 CF？
+
+1. 基础代码能力
+2. 思维能力
+3. 代码速度
+4. 进步检验
+5. 快速判断题目难度
+
+
+如何打好 CF？
+
+1. 总量大 < 频率高 $\implies$ **极度压缩刷题时间**
+2. 尽快的变强 $\implies$ **提高日常训练的收益**
+3. 建立 "**一超多强**" 的知识体系，例如图论、DP 类精学
+   1. 赌 Div. 2 的 E、F
+4. 不要 "怯战"，调用全部的脑子深度思考。
+   1. 实在不会可以跳题，因为有可能后面的题目**对你来说**可以做
+5. 学习新算法的时候**循序渐进，从易到难**
+   1. 只是对于 CF 上分来说，如果是 ICPC 选手，当然可以精通学某一方面
+
+
+
 [RegenFallen - Codeforces上分攻略2: 练习 - Bilibili](https://www.bilibili.com/video/BV1Sx4y1174X/) 
+
+1. 不限定算法的训练
+
+    适用对象：
+    1. 刚入门选手
+    2. 灰名
+    3. 不知道学什么
+    4. 想提高整体实力或手速
+
+2. 限定算法训练：
+   
+    适用对象：
+   1. 某种算法薄弱
+   2. 某种算法有天赋
+   3. 特点明显的算法
+   4. 队友都不会的算法
+
+    实现方式：
+    5. CF Tag + 洛谷题解初筛
+    6. 网上找各种题单资源
+
+3. 算法学习
+   1. 了解算法 —— 拓扑图
+   2. 学习算法思路
+   3. 写代码
+   4. 做题
+   5. 比赛
+
+4. 辅助训练
+   1. 打字训练 ( 手速训练 )
+   2. 常用算法模板复习
+
+
+
 
 
 其余有关 Codeforces 的博客：
