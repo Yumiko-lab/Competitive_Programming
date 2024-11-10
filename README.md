@@ -1,5 +1,11 @@
 # 算法竞赛
 
+2024 (第49th赛季) ICPC 预计参加赛站：
+
+1. 昆明 - 11.30 ~ 12.01 —— 北京理工大学 (BIT) - 黑冰茶出题组
+
+ 
+
 ![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
 
 
@@ -151,7 +157,14 @@
 [DOMjudge 中文文档](https://nwpu.gitbook.io/domjudge-doc) 
 
 
-## 水赛混奖
+
+
+
+
+
+
+
+- 水赛混奖
 
 [2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
 赛氪 —— 全国大学生算法设计与编程挑战赛（秋季赛）
