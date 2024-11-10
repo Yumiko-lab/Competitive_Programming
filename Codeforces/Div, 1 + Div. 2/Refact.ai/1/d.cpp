@@ -48,7 +48,7 @@ void solve() {
         dsu.merge(u, v);
     }
 
-    
+
 }
 
 int main() {
@@ -63,3 +63,9 @@ int main() {
 
     return 0;
 }
+
+/*
+
+DSU && vector<set<int>>
+
+*/

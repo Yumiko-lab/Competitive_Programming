@@ -18,7 +18,7 @@ void solve() {
     for (int i = 1; i <= n; i++) {
         cout << x[i] << " \n"[i == n];
     }
-    
+
 }
 
 int main() {
@@ -39,6 +39,8 @@ int main() {
 // 倍增
 f[i][j]: 从 i 开始往后跳 2^j 步区间之后的得分
 
+---
 
+DP or Binary Search on Answer
 
 */

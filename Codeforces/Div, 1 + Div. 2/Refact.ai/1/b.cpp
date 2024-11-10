@@ -5,7 +5,7 @@ void solve() {
     int n;
     string s, r;
     cin >> n >> s >> r;
-    array<int, 2> cnt{};
+    array<int, 2> cnt {};
     for (auto c : s) {
         cnt[c - '0']++;
     }
