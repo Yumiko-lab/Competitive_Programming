@@ -6,6 +6,9 @@
 > - [楜桃林東麓 - A ~ E - Blog - Zhihu](https://zhuanlan.zhihu.com/p/5983087340) 
 
 
+赛时题目通过惨状——
+
+![Image](https://github.com/user-attachments/assets/dd801c9a-c8e5-4315-b41b-0d5b3a5f8d3b)
 
 
 ## A. 
