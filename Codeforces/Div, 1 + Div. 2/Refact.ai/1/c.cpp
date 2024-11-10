@@ -18,7 +18,7 @@ void solve() {
     for (int i = 1; i <= n; i++) {
         cout << x[i] << " \n"[i == n];
     }
-
+    
 }
 
 int main() {
