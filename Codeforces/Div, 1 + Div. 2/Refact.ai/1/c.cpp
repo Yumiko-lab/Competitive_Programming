@@ -1,24 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+constexpr int INF = 1E9;
+
 void solve() {
     int n;
     cin >> n;
-    vector<int> a(n + 1), x(n + 1);
-    for (int i = 1; i <= n; i++) {
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
-        if (a[i] > x[i - 1]) {
-            x[i] = x[i - 1] + 1;
-        } else if (a[i] == x[i - 1]) {
-            x[i] = x[i - 1];
-        } else {
-            x[i] = x[i - 1] - 1;
+    }
+    array<int, 3> f {0, -INF, -INF}; // f[-1]
+    for (int i = 0; i < n; i++) {
+        f[2] = max(f[2], f[1]);
+        f[1] = max(f[1], f[0]);
+        for (int j = 0; j < 3; j++) {
+            if (j == 1) {
+                continue;
+            }
+            int &x = f[j];
+            if (a[i] > x) {
+                x++;
+            } else if (a[i] < x) {
+                x--;
+            }
         }
     }
-    for (int i = 1; i <= n; i++) {
-        cout << x[i] << " \n"[i == n];
-    }
-    
+    cout << max(f[1], f[2]) << '\n';
 }
 
 int main() {
@@ -33,14 +41,3 @@ int main() {
 
     return 0;
 }
-
-/*
-
-// 倍增
-f[i][j]: 从 i 开始往后跳 2^j 步区间之后的得分
-
----
-
-DP or Binary Search on Answer
-
-*/

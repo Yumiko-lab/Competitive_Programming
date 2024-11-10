@@ -47,8 +47,7 @@ void solve() {
         adj[v].insert(u);
         dsu.merge(u, v);
     }
-
-
+    
 }
 
 int main() {
