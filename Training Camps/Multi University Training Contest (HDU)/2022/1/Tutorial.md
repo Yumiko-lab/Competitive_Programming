@@ -341,7 +341,7 @@ int main() {
 
 ## A. 
 
-
+Board, KMP
 
 
 ```cpp
