@@ -341,9 +341,28 @@ int main() {
 
 ## A. 
 
-Board, KMP
+前置：Board，KMP，扩展 KMP。
 
 
 ```cpp
 
 ```
+
+## H. Path
+
+
+
+
+
+```cpp
+
+```
+
+## G. 
+
+Kruskal 重构树。
+
+```cpp
+
+```
+
