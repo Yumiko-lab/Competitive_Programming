@@ -2,6 +2,11 @@
 
 # 暑期牛客多校相关资料
 
+[【题解征集】2020牛客暑期多校训练营](https://ac.nowcoder.com/search/all?query=【题解征集】2020牛客暑期多校训练营&type=all&searchType=%E6%90%9C%E7%B4%A2%E9%A1%B5%E8%BE%93%E5%85%A5%E6%A1%86&subType=0) 
+
+
+
+
 [【资料汇总】2021牛客暑期多校训练营](https://ac.nowcoder.com/discuss/991934) 
 
 ![image](https://github.com/user-attachments/assets/2aed58b2-40ae-448e-b904-9395e49920ed)
@@ -21,3 +26,4 @@
 [【资料汇总】2024牛客暑期多校资料汇总帖](https://www.nowcoder.com/discuss/612253976892862464) 
 
 ![image](https://github.com/user-attachments/assets/cbc884b5-77eb-406b-8e48-9994ffa93a9a)
+
