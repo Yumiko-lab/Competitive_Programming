@@ -4,7 +4,7 @@
 
 [【题解征集】2020牛客暑期多校训练营](https://ac.nowcoder.com/search/all?query=【题解征集】2020牛客暑期多校训练营&type=all&searchType=%E6%90%9C%E7%B4%A2%E9%A1%B5%E8%BE%93%E5%85%A5%E6%A1%86&subType=0) 
 
-
+![image](https://github.com/user-attachments/assets/5a73c1ec-02cd-4d1a-ad0a-be389e92493f)
 
 
 [【资料汇总】2021牛客暑期多校训练营](https://ac.nowcoder.com/discuss/991934) 
