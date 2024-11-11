@@ -62,14 +62,14 @@
 
 
 
-## 如何快速读题 (快速get到题眼) How to read problems quickly
+## 如何快速读题 How to read problems quickly
 
 [Notes on Reading Problems in ICPC Competitions - Codeforces](https://codeforces.com/blog/entry/132486) 
 
 [How can I speed up my reading of a Codeforces or TopCoder problem statement? - Quora](https://www.quora.com/How-can-I-speed-up-my-reading-of-a-Codeforces-or-TopCoder-problem-statement) 
 
 
-## CF 如何快速上分 ( 快速进步 ) About Improving Efficiently
+## CF 如何快速上分 About Improving Efficiently
 
 [0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
 
