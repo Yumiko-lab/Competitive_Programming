@@ -1,26 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
+using i64 = long long;
 
 void solve() {
-    int n, m = 0;
+    int n;
     cin >> n;
-    bool has = false;
-    vector<int> a(n + 1); // 0 .. n
-    bool ok = false;
-    bool row = true; // is in a row
+    vector<int> a(n + 1);
     for (int i = 0; i <= n; i++) {
         cin >> a[i];
-        if (i > 0 && a[i] == 0) {
-            row = false;
-        }
-        if (row && a[i] >= 2) {
-            ok = true;
-        }
     }
-    if (a[0] > 0) {
-        ok = true;
+    for (int i = n; i >= 1; i--) {
+        a[i - 1] += a[i] / 2;
     }
-    cout << (ok ? "Alice" : "Bob") << '\n';
+    cout << (a[0] > 0 ? "Alice" : "Bob") << '\n';
 }
 
 int main() {
