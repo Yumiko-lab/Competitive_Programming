@@ -9,10 +9,13 @@
 
 [“蔚来杯”2022牛客暑期多校信息汇总](https://ac.nowcoder.com/discuss/944978) 
 
+
 ![image](https://github.com/user-attachments/assets/9a164968-049a-4bbd-ab16-50921fda686a)
 
 
 [2023年牛客暑期多校信息资料汇总](https://ac.nowcoder.com/discuss/1161248) 
+
+![image](https://github.com/user-attachments/assets/edc6f52c-d95c-4fd1-bf54-d503634017a5)
 
 
 [【资料汇总】2024牛客暑期多校资料汇总帖](https://www.nowcoder.com/discuss/612253976892862464) 
