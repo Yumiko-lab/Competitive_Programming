@@ -10,7 +10,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-constexpr int MOD = 1000000007;
+constexpr int MOD = 1'000'000'007;
 
 void solve() {
     int n, m;
