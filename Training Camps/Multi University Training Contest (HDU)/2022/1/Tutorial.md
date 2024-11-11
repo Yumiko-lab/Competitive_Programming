@@ -318,7 +318,7 @@ int main() {
 
 ## B. Dragon slayer
 
-
+暴搜或状压。
 
 ```cpp
 
@@ -326,6 +326,21 @@ int main() {
 
 
 ## I. Laser
+
+> Description：
+>
+> 给定一个
+
+计算几何。
+
+
+
+```cpp
+
+```
+
+## A. 
+
 
 
 
