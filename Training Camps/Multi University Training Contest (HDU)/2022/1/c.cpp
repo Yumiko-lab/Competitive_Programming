@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+constexpr int N = 1 << 11;
+
 void solve() {
-    int n, m;
-    cin >> n >> m;
-    
+
 }
 
 int main() {
