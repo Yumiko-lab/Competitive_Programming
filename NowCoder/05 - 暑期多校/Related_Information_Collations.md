@@ -20,3 +20,4 @@
 
 [【资料汇总】2024牛客暑期多校资料汇总帖](https://www.nowcoder.com/discuss/612253976892862464) 
 
+![image](https://github.com/user-attachments/assets/cbc884b5-77eb-406b-8e48-9994ffa93a9a)
