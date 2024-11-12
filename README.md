@@ -1,9 +1,10 @@
 # 算法竞赛
 
-NowCoder Summar Camp 20 ~ 24 (5 * 10)
-HDU Summar Camp 22 ~ 24 (3 * 30)
-Ucup
-Yucup
+NowCoder Summar Camp 20 ~ 24 (5 × 10)
+
+HDU Summar Camp 22 ~ 24 (3 × 30)
+
+UCup
 
 
 2024 (第49th赛季) ICPC 预计参加赛站：
