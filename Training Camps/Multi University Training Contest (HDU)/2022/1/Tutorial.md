@@ -203,7 +203,7 @@ $f(i, j)$：考虑前 $i$ 个物品，且体积恰好为 $j$ 的价值的异或�
 - 转移：
 
 $$
-f(j) = \max f(j - v_i) \oplus w_i
+f(i) = \max f(i - v_i) \oplus w_i
 $$
 
 
