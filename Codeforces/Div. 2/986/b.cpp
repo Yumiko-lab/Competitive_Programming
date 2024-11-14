@@ -11,12 +11,12 @@ void solve() {
         ans = n - (c < n ? (n - 1 - c) / b + 1 : 0);
     } else if (c >= n) {
         ans = n;
-    } else if (n - c >= 3) {
-        ans = -1;
-    } else {
+    } else if (c >= n - 2) {
         ans = n - 1;
+    } else {
+        ans = -1;
     }
-
+    
     cout << ans << '\n';
 }
 
