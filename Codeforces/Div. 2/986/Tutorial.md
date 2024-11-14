@@ -1,3 +1,38 @@
+# Codeforces Round 986 (Div. 2)
+
+
+> 参考题解：
+>
+> - [Official - Blog](https://codeforces.com/blog/entry/136096) 
+> - [芋饼饭 - A ~ E - Video - Bilibili](https://www.bilibili.com/video/BV1WCmsYqEUv/)
+> - []()
+
+
+
+## A. 
+
+
+
+
+```cpp
+
+```
+
+
+## B. 
+
+
+```cpp
+
+```
+
+
+## C. 
+
+思路非常好想，代码有点难写。
+
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
@@ -81,22 +116,34 @@ int main() {
 
     return 0;
 }
+```
 
-/*
 
-f[i]: 表示 1 .. i 最多可以满足几个人
-g[i]: 表示 i .. n 最多 .. 
 
-1
-6 2 1
-1 1 10 1 1 10
+## D. Alice's Adventures in Cards
 
-1
-6 2 3
-1 1 10 1 1 10
 
-1
-6 2 3
-10 1 1 10 1 1
+```cpp
 
-*/
+```
+
+
+
+## E. 
+
+
+```cpp
+
+```
+
+
+## F. 
+
+
+```cpp
+
+```
+
+
+
+
