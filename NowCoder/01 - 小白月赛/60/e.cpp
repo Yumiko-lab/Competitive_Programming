@@ -1,11 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-constexpr int N = 1000010, M = 5000010;
-
-bitset<M> f[N];
-
 vector<int> minp, primes;
+
+vector<set<int>> f;
 
 void sieve(int n) {
     minp.assign(n + 1, 0);
@@ -47,7 +45,6 @@ struct DSU {
             return false;
         }
         siz[y] += siz[x];
-        f[y] &= f[x];
         p[x] = y; // x -> y
         return true;
     }
@@ -65,13 +62,14 @@ int main() {
 
     int n;
     cin >> n;
+    f = vector<set<int>>(n + 1);
     for (int i = 1; i <= n; i++) {
         int x;
         cin >> x;
         while (x > 1) {
             int p = minp[x];
             x /= p;
-            f[i][p] = 1;
+            f[i].insert(p);
         }
     }
 
@@ -79,8 +77,18 @@ int main() {
     for (int i = 0; i < n - 1; i++) {
         int u, v;
         cin >> u >> v;
-        u = dsu.find(u), v = dsu.find(v);
-        if ((f[u] & f[v]).count() >= 2) {
+        int cnt = 0;
+        if (f[u].size() > f[v].size()) {
+            swap(u, v);
+        }
+        for (auto x : f[u]) {
+            if (f[v].count(x)) {
+                if (++cnt == 2) {
+                    break;
+                }
+            }
+        }
+        if (cnt == 2) {
             dsu.merge(u, v);
         }
     }
