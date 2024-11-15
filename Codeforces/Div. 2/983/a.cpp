@@ -2,7 +2,15 @@
 using namespace std;
 
 void solve() {
-    
+    int n;
+    cin >> n;
+    array<int, 2> cnt{};
+    for (int i = 0; i < 2 * n; i++) {
+        int x;
+        cin >> x;
+        cnt[x]++;
+    }
+    cout << cnt[1] % 2 << ' ' << (cnt[1] < n ? cnt[1] : 2 * n - cnt[1]) << '\n';
 }
 
 int main() {
