@@ -2,7 +2,6 @@
 using namespace std;
 
 vector<int> minp, primes;
-
 vector<set<int>> f;
 
 void sieve(int n) {
@@ -31,7 +30,7 @@ struct DSU {
     vector<int> p, siz;
     
     DSU() {}
-    DSU(int n) : p(n + 1), siz(n + 1, 1) {
+    DSU(int n) : p(n), siz(n, 1) {
         iota(p.begin(), p.end(), 0);
     }
 
@@ -43,6 +42,9 @@ struct DSU {
         x = find(x), y = find(y);
         if (x == y) {
             return false;
+        }
+        if (siz[x] > siz[y]) {
+            swap(x, y);
         }
         siz[y] += siz[x];
         p[x] = y; // x -> y
@@ -62,8 +64,8 @@ int main() {
 
     int n;
     cin >> n;
-    f = vector<set<int>>(n + 1);
-    for (int i = 1; i <= n; i++) {
+    f = vector<set<int>>(n);
+    for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
         while (x > 1) {
@@ -77,6 +79,7 @@ int main() {
     for (int i = 0; i < n - 1; i++) {
         int u, v;
         cin >> u >> v;
+        u--, v--;
         int cnt = 0;
         if (f[u].size() > f[v].size()) {
             swap(u, v);
@@ -94,7 +97,7 @@ int main() {
     }
 
     int mx = 0;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
         if (dsu.p[i] == i) {
             mx = max(mx, dsu.size(i));
         }
