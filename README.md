@@ -64,6 +64,9 @@ UCup
 2. [UOJ](https://uoj.ac/)
 
 
+其它 OJ：
+1. [Hydro](https://hydro.ac/) —— BZOJ
+
 
 ## 如何快速读题 How to read problems quickly
 
