@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-constexpr int INF = 1e9;
+constexpr int inf = 1e9;
 
 constexpr int d[][2] = {
     {1, 0}, {-1, 0}, {0, 1}, {0, -1}
@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    vector f(n, vector<int>(m, INF)), g(n, vector<int>(m, INF));
+    vector f(n, vector<int>(m, inf)), g(n, vector<int>(m, inf));
 
     auto bfs = [&](int sx, int sy, auto &dis) {
         dis[sx][sy] = 0;
@@ -33,7 +33,7 @@ int main() {
             q.pop();
             for (auto &[dx, dy] : d) {
                 int a = x + dx, b = y + dy;
-                if (a < 0 || a >= n || b < 0 || b >= m || w[a][b] == -1 || dis[a][b] != INF) {
+                if (a < 0 || a >= n || b < 0 || b >= m || w[a][b] == -1 || dis[a][b] != inf) {
                     continue;
                 }
                 dis[a][b] = dis[x][y] + 1;
@@ -45,7 +45,7 @@ int main() {
     bfs(sx, sy, f);
     bfs(ex, ey, g); 
 
-    int ans = INF;
+    int ans = inf;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             if (w[i][j] > x) {
@@ -54,7 +54,7 @@ int main() {
         }
     }
     
-    if (ans == INF) {
+    if (ans == inf) {
         ans = -1;
     }
     
