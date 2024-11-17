@@ -12,14 +12,13 @@ int main() {
         cin >> a[i];
     }
 
-    vector<int> f(n + 1), g(n + 1);
+    vector<int> f(n + 1);
 
     for (int i = 1; i <= n; i++) {
-        f[i] = g[max(0, i - k - 1)] + a[i];
-        g[i] = max(g[i - 1], f[i]);
+        f[i] = max(f[i - 1], f[max(0, i - k - 1)] + a[i]);
     }
 
-    cout << g[n] << '\n';
+    cout << f[n] << '\n';
 
     return 0;
 }
