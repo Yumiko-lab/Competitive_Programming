@@ -7,7 +7,11 @@ int main() {
 
     int x, n;
     cin >> x >> n;
-    cout << 1LL * x * n << '\n';
+    if (n <= x) {
+        cout << 1LL * n * x << '\n';
+    } else {
+        cout << x << '\n';
+    }
 
     return 0;
 }

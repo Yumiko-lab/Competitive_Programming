@@ -23,7 +23,6 @@ int main() {
     }
 
     vector<i64> f(n);
-    i64 ans = -1e18;
     auto dfs = [&](auto self, int u, int from) -> void {
         f[u] = a[u];
         for (auto [v, w] : adj[u]) {
@@ -33,12 +32,11 @@ int main() {
             self(self, v, u);
             f[u] = max(f[u], f[u] + w + f[v]);
         }
-        ans = max(ans, f[u]);
     };
 
     dfs(dfs, 0, -1);
 
-    cout << ans << '\n';
+    cout << *max_element(f.begin(), f.end()) << '\n';
 
     return 0;
 }
