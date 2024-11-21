@@ -11,18 +11,10 @@ UCup
 
 1. 昆明 - 11.30 ~ 12.01 —— 北京理工大学 (BIT) - 黑冰茶出题组 / 企业(字节跳动) / MIT
 
- 
 
 ![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
-
-
 ![image](https://github.com/user-attachments/assets/6a646bff-88a0-4276-baac-75236dd25912)
-
-
 ![image](https://github.com/user-attachments/assets/1a16d959-c1a3-4486-999a-69e89345f188)
-
-
-
 ![image](https://github.com/user-attachments/assets/2387715c-e385-45b2-8340-79fa9e45321a)
 
 
@@ -169,6 +161,7 @@ UCup
 
 
 
+DOMJudge 命令：
 
 
 
