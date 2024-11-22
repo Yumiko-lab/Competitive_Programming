@@ -6,6 +6,7 @@ HDU Summar Camp 22 ~ 24 (3 × 30)
 
 UCup
 
+BIT 校赛
 
 2024 (第49th赛季) ICPC 预计参加赛站：
 
