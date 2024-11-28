@@ -66,14 +66,6 @@ cat out.txt
 ./run.sh x
 ```
 
-VSCode 设置修改文件时自动保存：
-
-```cpp
-进入设置，找到 Files:Auto Save
-
-修改选项：off -> onFocusChange
-```
-
 
 
 ### DOMJudge
