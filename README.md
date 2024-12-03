@@ -145,13 +145,3 @@ UCup
 
 [HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
 
-
-
-
-
-- 水赛混奖
-
-
-[2024 年度第五届全国大学生算法设计与编程挑战赛（秋季赛）](https://new.saikr.com/vse/adpc/2024/autumn?type=entry&t_id=5429105) 
-
-[全国高校计算机能力挑战赛](https://www.ncccu.org.cn/index/User/user.html) 
