@@ -6,16 +6,6 @@ HDU Summar Camp 22 ~ 24 (3 × 30)
 
 UCup
 
-BIT 校赛
-
-2024 (第49th赛季) ICPC 预计参加赛站：
-
-1. 昆明 - 11.30 ~ 12.01 —— 北京理工大学 (BIT) - 黑冰茶出题组
-
-黑冰茶出题组，原北京理工大学，ICPC WF46 rk13，CCPC Final 2023 季军：
-
-1. 2024 牛客暑期多校 4
-
 
 
 ![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
