@@ -44,15 +44,19 @@
 
 [0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
 
-[Um_nik - How to practice Competitive Programming [Um_nik version] - Codeforces](https://codeforces.com/blog/entry/98806) 
+0x3F 训练方法：
 
-[Radewoosh - My opinion on how to practice competitive programming - Codeforces](https://codeforces.com/blog/entry/91114) 
-
-[E869120 - [Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+ - Codeforces](https://codeforces.com/blog/entry/66909) 
-
-[robot-dreams - Improving efficiently: beyond "just solve more problems"? - Codeforces](https://codeforces.com/blog/entry/66715) 
+1. 多做构造题能有效提高自己的思维水平（开脑洞的能力），从而更快地找到切题入口。（构造题即 constructive algorithms，可以通过 problemset 页面右侧的 Filter Problems 来搜索）
+2. 找到自己的弱项，做难度为自己当前 rating+200 的相关题目。
+3. 大多数时候，思考 10 分钟没有思路可以直接看题解。这是因为如果你思考 10 分钟没有思路，可能是有一个概念不知道，或者有一个观察错过了。在你训练的过程中，最好是解决更多的问题，积累更多的解题技巧。
 
 
+0x3F 训练体会：
+
+1. 我的训练方法非常简单：只做构造题（难度随自己 rating 变动），并且只要连续思考 10 分钟没有任何进展时，就直接去看题解（如果有进展就将计时器归零）。事实证明这个方法对我非常有效，毕竟这些题目所需要的常用技巧（tricks）是有限的。
+2. 不要觉得看题解是一件很丧气的事情，有时候没想出来只是因为你不了解这道题需要的 trick。
+3. 把需要看题解的题目占比控制在 30%-70%，太高说明你练习的题目太难，太低说明你练习的题目太简单。
+4. 我最大的收获就是熟练掌握了「从特殊到一般」的技巧。大多数题目是不能一眼看出规律的，这就需要从小数据或特殊数据出发（比如元素值只有 0 和 1），去研究并发现性质和规律。在做构造题时，应当重点摸索和体会这一技巧。
 
 
 [RegenFallen - Codeforces上分攻略1: 计划 - Bilibili](https://www.bilibili.com/video/BV1tK42117h4/) 
@@ -65,7 +69,6 @@
 4. 进步检验
 5. 快速判断题目难度
 
-
 如何打好 CF？
 
 1. 总量大 < 频率高 $\implies$ **极度压缩刷题时间**
@@ -76,8 +79,6 @@
    1. 实在不会可以跳题，因为有可能后面的题目**对你来说**可以做
 5. 学习新算法的时候**循序渐进，从易到难**
    1. 只是对于 CF 上分来说，如果是 ICPC 选手，当然可以精通学某一方面
-
-
 
 [RegenFallen - Codeforces上分攻略2: 练习 - Bilibili](https://www.bilibili.com/video/BV1Sx4y1174X/) 
 
@@ -112,13 +113,17 @@
    1. 打字训练 ( 手速训练 )
    2. 常用算法模板复习
 
+- [Um_nik - How to practice Competitive Programming [Um_nik version] - Codeforces](https://codeforces.com/blog/entry/98806) 
+- [Radewoosh - My opinion on how to practice competitive programming - Codeforces](https://codeforces.com/blog/entry/91114) 
+- [E869120 - [Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+ - Codeforces](https://codeforces.com/blog/entry/66909) 
+- [robot-dreams - Improving efficiently: beyond "just solve more problems"? - Codeforces](https://codeforces.com/blog/entry/66715) 
+
 
 
 其余有关 Codeforces 的博客：
 
 - [ezoixx130 - 【洛谷日报#116】Codeforces快速精通 - Zhihu](https://zhuanlan.zhihu.com/p/71674596) 
 - [HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
-
 
 
 ![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
