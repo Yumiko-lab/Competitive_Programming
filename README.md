@@ -42,7 +42,7 @@
 
 ## CF 如何快速上分 About Improving Efficiently
 
-[0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
+- [0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
 
 0x3F 训练方法：
 
@@ -59,7 +59,7 @@
 4. 我最大的收获就是熟练掌握了「从特殊到一般」的技巧。大多数题目是不能一眼看出规律的，这就需要从小数据或特殊数据出发（比如元素值只有 0 和 1），去研究并发现性质和规律。在做构造题时，应当重点摸索和体会这一技巧。
 
 
-[RegenFallen - Codeforces上分攻略1: 计划 - Bilibili](https://www.bilibili.com/video/BV1tK42117h4/) 
+- [RegenFallen - Codeforces上分攻略1: 计划 - Bilibili](https://www.bilibili.com/video/BV1tK42117h4/) 
 
 为什么要打 CF？
 
@@ -80,7 +80,7 @@
 5. 学习新算法的时候**循序渐进，从易到难**
    1. 只是对于 CF 上分来说，如果是 ICPC 选手，当然可以精通学某一方面
 
-[RegenFallen - Codeforces上分攻略2: 练习 - Bilibili](https://www.bilibili.com/video/BV1Sx4y1174X/) 
+- [RegenFallen - Codeforces上分攻略2: 练习 - Bilibili](https://www.bilibili.com/video/BV1Sx4y1174X/) 
 
 1. 不限定算法的训练
 
