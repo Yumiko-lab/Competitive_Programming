@@ -12,12 +12,11 @@ int main() {
     vector<int> id(K + 1, -1);
     
     int cur = K;
-    for (int i = 0; i < N; i++) {
+    for (int i = 1; i <= N; i++) {
         int a;
-        cin >> a;
-        while (cur > a) {
-            cur--;
-            id[cur] = i + 1;
+        cin >> a; 
+        for (; cur >= a; cur--) {
+            id[cur] = i;
         }
     }
 

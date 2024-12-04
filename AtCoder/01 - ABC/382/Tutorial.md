@@ -4,8 +4,8 @@
 > 参考题解：
 >
 > - [Official - Blog](https://atcoder.jp/contests/abc382/editorial) 
->
-> 
+> - [清北学堂信息学 - A ~ G - Video - Bilibili](https://www.bilibili.com/video/BV16AzZYeEGN/) 
+> - [RegenFallen - A ~ D - Video - Bilibili](https://www.bilibili.com/video/BV1TAzpYmEcC/) 
 
 
 
@@ -81,6 +81,7 @@ int main() {
 ## C. 
 
 
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -96,12 +97,11 @@ int main() {
     vector<int> id(K + 1, -1);
     
     int cur = K;
-    for (int i = 0; i < N; i++) {
+    for (int i = 1; i <= N; i++) {
         int a;
-        cin >> a;
-        while (cur > a) {
-            cur--;
-            id[cur] = i + 1;
+        cin >> a; 
+        for (; cur >= a; cur--) {
+            id[cur] = i;
         }
     }
 
@@ -167,5 +167,16 @@ int main() {
 ## F. 
 
 
+线段树
+
+```cpp
+
+```
+
 ## G. 
 
+
+
+```cpp
+
+```
