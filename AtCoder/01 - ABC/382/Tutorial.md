@@ -1,5 +1,8 @@
 # AtCoder Beginner Contest 382
 
+[Problems](https://atcoder.jp/contests/abc382/tasks) 
+
+[CLIST - Problems Rating Contributions](https://clist.by/problems/?resource=93&contest=55077887) 
 
 > 参考题解：
 >
@@ -8,6 +11,7 @@
 > - [RegenFallen - A ~ D - Video - Bilibili](https://www.bilibili.com/video/BV1TAzpYmEcC/) 
 
 
+E 的概率与期望 DP 比 F 线段树 还难。
 
 
 ## A. 
@@ -163,11 +167,20 @@ int main() {
 
 ## E. 
 
+概率与期望 DP。
+
+
+```cpp
+
+```
+
 
 ## F. 
 
 
-线段树
+线段树。
+
+
 
 ```cpp
 

@@ -1,22 +1,6 @@
 # 算法竞赛
 
-NowCoder Summar Camp 20 ~ 24 (5 × 10)
-
-HDU Summar Camp 22 ~ 24 (3 × 30)
-
-UCup
-
-
-
-![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
-![image](https://github.com/user-attachments/assets/6a646bff-88a0-4276-baac-75236dd25912)
-![image](https://github.com/user-attachments/assets/1a16d959-c1a3-4486-999a-69e89345f188)
-![image](https://github.com/user-attachments/assets/2387715c-e385-45b2-8340-79fa9e45321a)
-
-
-
 ## 训练地址
-
 
 周赛 (每周固定时间)：
 
@@ -24,8 +8,6 @@ UCup
 2. [Lanqiao](https://www.lanqiao.cn/oj-contest/) —— Sat (19:00 ~ 21:00)
 3. [牛客](https://ac.nowcoder.com/acm/contest/vip-index) —— Sun (19:00 ~ 21:00)
 4. [LeetCode](https://leetcode.cn/contest/) —— Sun (10:30 ~ 12:00) / Sat (22:30 ~ 00:00)
-
-
 
 比赛列表：
 
@@ -36,9 +18,7 @@ UCup
 5. [Luogu](https://www.luogu.com.cn/contest/list) 
 6. [LeetCode](https://leetcode.cn/contest/)
 
-
 训练列表：
-
 
 1. [QOJ](https://qoj.ac/) 
 2. [Codeforces GYM](https://codeforces.com/gyms) 
@@ -46,15 +26,12 @@ UCup
 4. [Codeforces](https://codeforces.com/blog/entry/135252)
 5. [VJudge](https://vjudge.net/contest) 
 
-
 刷难题：
 1. [LOJ](https://loj.ac/) 
 2. [UOJ](https://uoj.ac/)
 
-
 其它 OJ：
 1. [Hydro](https://hydro.ac/) —— BZOJ
-
 
 ## 如何快速读题 How to read problems quickly
 
@@ -121,8 +98,8 @@ UCup
    4. 队友都不会的算法
 
     实现方式：
-    5. CF Tag + 洛谷题解初筛
-    6. 网上找各种题单资源
+    1. CF Tag + 洛谷题解初筛
+    2. 网上找各种题单资源
 
 3. 算法学习
    1. 了解算法 —— 拓扑图
@@ -137,11 +114,14 @@ UCup
 
 
 
-
-
 其余有关 Codeforces 的博客：
 
-[ezoixx130 - 【洛谷日报#116】Codeforces快速精通 - Zhihu](https://zhuanlan.zhihu.com/p/71674596) 
+- [ezoixx130 - 【洛谷日报#116】Codeforces快速精通 - Zhihu](https://zhuanlan.zhihu.com/p/71674596) 
+- [HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
 
-[HosseinYousefi - C++ Tricks - Codeforces](https://codeforces.com/blog/entry/15643) 
 
+
+![image](https://github.com/user-attachments/assets/8d8faea7-d886-480a-8ad7-9a62097214c7)
+![image](https://github.com/user-attachments/assets/6a646bff-88a0-4276-baac-75236dd25912)
+![image](https://github.com/user-attachments/assets/1a16d959-c1a3-4486-999a-69e89345f188)
+![image](https://github.com/user-attachments/assets/2387715c-e385-45b2-8340-79fa9e45321a)
