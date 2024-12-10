@@ -14,7 +14,7 @@ void solve() {
     cout << ans.size() << '\n';
     for (auto x : ans) {
         cout << x + 1 << ' ' << x + 1 << '\n';
-    }    
+    }
 }
 
 int main() {

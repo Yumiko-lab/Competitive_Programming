@@ -2,15 +2,13 @@
 using namespace std;
 
 void solve() {
-    vector<int> a(4);
-    cin >> a[0] >> a[1] >> a[2] >> a[3];
+    set<int> S;
     for (int i = 0; i < 4; i++) {
-        if (a[i] != a[0]) {
-            cout << "YES\n";
-            return;
-        }
+        int x;
+        cin >> x;
+        S.insert(x);
     }
-    cout << "NO\n";
+    cout << (S.size() == 1 ? "NO" : "YES") << '\n';
 }
 
 int main() {
