@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-constexpr int inf = 1e9;
+using i64 = long long;
 
 int main() {
     ios::sync_with_stdio(false);
@@ -15,23 +14,22 @@ int main() {
         cin >> t[i];
     }
 
-    array<int, 3> f {inf, inf, inf}, g {};
-    for (int i = 0; i < n; i++) {
-        for (auto c : {0, 1, 2}) {
-            f[c] = min(f[c], g[c] + ((s[i] - '0') != c ? t[i] : 0));
+    vector<int> ord {0, 1, 2};
+    i64 ans = 1e18;
+    do {
+        vector f(n + 1, vector<i64>(3, 1e18));
+        f[0] = {0, 0, 0};
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k <= j; k++) {
+                    f[i + 1][ord[j]] = min(f[i + 1][ord[j]], f[i][ord[k]] + (s[i] - '0' != ord[j]) * t[i]);
+                }
+            }
         }
-        g = f;
-    }
+        ans = min(ans, *min_element(f[n].begin(), f[n].end()));
+    } while (next_permutation(ord.begin(), ord.end()));
 
-    cout << *min_element(f.begin(), f.end()) << '\n';
+    cout << ans << '\n';
 
     return 0;
 }
-
-/*
-
-f[i][c]: 表示考虑 1 .. i 且以颜色 c 为结尾且满足相同颜色的气球都在一起的最小代价
-
-f[i][c] = min() + (s[i] != c ? t[i] : 0);
-
-*/
