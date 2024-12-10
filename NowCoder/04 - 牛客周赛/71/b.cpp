@@ -5,23 +5,14 @@ void solve() {
     int n;
     string s;
     cin >> n >> s;
-    vector<vector<int>> p(26);
-    for (int i = 0; i < n; i++) {
-        p[s[i] - 'a'].push_back(i);
+    int ans = n - 1;
+    s += s;
+    vector<int> last(26, -n);
+    for (int i = 0; i < 2 * n; i++) {
+        ans = min(ans, i - last[s[i] - 'a'] - 1);
+        last[s[i] - 'a'] = i;
     }
-    int ans = n;
-    for (int i = 0; i < 26; i++) {
-        if (!p[i].empty()) {
-            int siz = p[i].size();
-            for (int j = 1; j < siz; j++) {
-                ans = min(ans, p[i][j] - p[i][j - 1] - 1);
-            }
-            if (siz > 1) {
-                ans = min(ans, p[i][0] + n - p[i][siz - 1] - 1);
-            }
-        }
-    }
-    if (ans == n) {
+    if (ans == n - 1) {
         ans = -1;
     }
     cout << ans << '\n';

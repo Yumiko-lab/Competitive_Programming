@@ -30,7 +30,7 @@ void solve() {
         }
     }
     for (int i = 0; i < n; i++) {
-        if (i + 1 < n && a[i + 1].y >= 2) {
+        if (i + 1 < n && a[i + 1].y >= 2 && a[i + 1].x * 2 > a[i].x) {
             ans = max(ans, calc(a[i].x, a[i + 1].x, a[i + 1].x));
         }
     }

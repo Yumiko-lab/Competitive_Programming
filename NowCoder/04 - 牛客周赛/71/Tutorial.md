@@ -35,19 +35,55 @@ void solve() {
     for (int i = 0; i < n; i++) {
         p[s[i] - 'a'].push_back(i);
     }
-    int ans = n;
+    int ans = n - 1;
     for (int i = 0; i < 26; i++) {
         if (!p[i].empty()) {
             int siz = p[i].size();
             for (int j = 1; j < siz; j++) {
                 ans = min(ans, p[i][j] - p[i][j - 1] - 1);
             }
-            if (siz > 1) {
-                ans = min(ans, p[i][0] + n - p[i][siz - 1] - 1);
-            }
+            ans = min(ans, p[i][0] + n - p[i][siz - 1] - 1);
         }
     }
-    if (ans == n) {
+    if (ans == n - 1) {
+        ans = -1;
+    }
+    cout << ans << '\n';
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}
+```
+
+
+也可以用环形数组的经典处理方式，破换成链，后面再赋值一份原数组，然后题目等价于求相同数字的最小间距。
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n;
+    string s;
+    cin >> n >> s;
+    int ans = n - 1;
+    s += s;
+    vector<int> last(26, -n);
+    for (int i = 0; i < 2 * n; i++) {
+        ans = min(ans, i - last[s[i] - 'a'] - 1);
+        last[s[i] - 'a'] = i;
+    }
+    if (ans == n - 1) {
         ans = -1;
     }
     cout << ans << '\n';
@@ -96,6 +132,8 @@ int main() {
 全排列枚举三种颜色的顺序，然后 $dp$ 转移。
 
 
+相似题：[Refact.ai Match 1 (Codeforces Round 985) - C. New Rating](https://codeforces.com/contest/2029/problem/C) 
+
 
 ```cpp
 #include <bits/stdc++.h>
@@ -133,4 +171,19 @@ int main() {
 
     return 0;
 }
+```
+
+## E. 
+
+
+```cpp
+
+```
+
+## F. 
+
+
+
+```cpp
+
 ```

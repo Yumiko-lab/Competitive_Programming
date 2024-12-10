@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-constexpr int INF = 1E9;
+constexpr int inf = 1E9;
 
 void solve() {
     int n;
@@ -10,7 +10,7 @@ void solve() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    array<int, 3> f {0, -INF, -INF}; // f[-1]
+    array<int, 3> f {0, -inf, -inf}; // f[-1]
     for (int i = 0; i < n; i++) {
         f[2] = max(f[2], f[1]);
         f[1] = max(f[1], f[0]);
