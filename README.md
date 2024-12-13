@@ -7,10 +7,11 @@
 
 软件工程：
 
-1. [高数帮 - 【软件工程】3小时速成课|软件工程期末不挂科！！](https://www.bilibili.com/video/BV1t64y1r7o2/) 
-2. [高数帮 - 【软件工程】软件工程期末试卷习题课讲解！！](https://www.bilibili.com/video/BV1G54y1H7WD/) 
-3. [又菜又爱玩ST - 软件工程试卷讲解 - Bilibili](https://www.bilibili.com/video/BV1AR4y1j7NX/) 
-4. [晋青杨 - 百度文库软件工程期末试题 - Cnblogs](https://www.cnblogs.com/qyf2199/p/12104922.html) 
+1. [数学建模老哥 - 《软件工程》3小时期末速成课！期末速成丨考前突击丨期末不挂科丨考点总结](https://www.bilibili.com/video/BV1xNzRYiEkz/) 
+2. [高数帮 - 【软件工程】3小时速成课|软件工程期末不挂科！！](https://www.bilibili.com/video/BV1t64y1r7o2/) 
+3. [高数帮 - 【软件工程】软件工程期末试卷习题课讲解！！](https://www.bilibili.com/video/BV1G54y1H7WD/) 
+4. [又菜又爱玩ST - 软件工程试卷讲解 - Bilibili](https://www.bilibili.com/video/BV1AR4y1j7NX/) 
+5. [晋青杨 - 百度文库软件工程期末试题 - Cnblogs](https://www.cnblogs.com/qyf2199/p/12104922.html) 
 
 
 计算机组成原理：
