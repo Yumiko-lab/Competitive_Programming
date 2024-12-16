@@ -6,8 +6,6 @@ XCPC Training：
 
 
 
-
-
 牛客：
 
 - 牛客系列赛：
