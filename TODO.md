@@ -1,5 +1,13 @@
 
 
+XCPC Training：
+
+1. [Petrozavodsk Winter 2017. Day 1. Jagiellonian U Contest](https://qoj.ac/contest/1362?v=1) 
+
+
+
+
+
 牛客：
 
 - 牛客系列赛：
