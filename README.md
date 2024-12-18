@@ -54,7 +54,7 @@
 [How can I speed up my reading of a Codeforces or TopCoder problem statement? - Quora](https://www.quora.com/How-can-I-speed-up-my-reading-of-a-Codeforces-or-TopCoder-problem-statement) 
 
 
-## CF 如何快速上分 About Improving Efficiently
+## CF 如何快速上分 About improving efficiently
 
 - [0x3F - 大佬们，CodeForces 怎么上分? - Zhihu](https://www.zhihu.com/question/353734418/answer/2353160035) 
 
