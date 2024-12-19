@@ -5,6 +5,7 @@
 2. [数学建模老哥 - 《操作系统》4小时期末不挂科！期末速成丨考前突击丨期末不挂科丨考点总结](https://www.bilibili.com/video/BV1ju6TYHEKU/) 
 3. [从0开始数 - 操作系统原理(合集)](https://www.bilibili.com/video/BV13b4y1Q7YD/) 
 4. [nomanker - 爆肝一晚上，希望用动画带你理解操作系统的启动](https://www.bilibili.com/video/BV1mm4y1u7G6/) 
+5. [张时贰 - 王道考研 操作系统知识点汇总(目录+思维导图)](https://juejin.cn/post/7099830837117452302) 
 
 
 期末考试范围：
